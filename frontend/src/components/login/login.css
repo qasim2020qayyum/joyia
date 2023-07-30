@@ -1,0 +1,42 @@
+body {
+    background-repeat: no-repeat;
+    /* background-image: url("footer-bg-img.jpg"); */
+    
+  }
+  .bgimage{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 39.6rem;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .btn-google {
+    color: #EA130E !important;
+    width: 375px;
+    font-weight: 600;
+  }
+  
+  .btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+  }
+  .input{
+    padding: 25px;
+  }
+  .login{
+    background-color: #EA130E;
+    width: 375px;
+    font-weight: 600;
+    padding : 15px
+  }
+  .signup{
+    color: #EA130E;
+    font-weight: 700;
+  }

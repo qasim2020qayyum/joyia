@@ -1,0 +1,19 @@
+.bgimage{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 42.6rem;
+  }
+  .head{
+    background-color: #EA130E !important;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    border: 0;
+  }
+  .form1{
+    /* height: 10rem;
+    width: 100%;
+     */
+  }
