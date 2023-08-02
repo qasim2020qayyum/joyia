@@ -44,9 +44,9 @@ function Login() {
         // sessionStorage.setItem("userPassword",record.LoginUser.email)
         let adminemail = sessionStorage.getItem("userEmail")
         // let adminPassword = sessionStorage.getItem("userPassword")
-        if (adminemail == "admin@gmail.com") {
+        if (adminemail == "info@joyiapetroleum.com") {
           navigate("/admin-Dashboard")
-          toast.success("Admin Login Successfully 👌");
+          toast.success("Manager Login Successfully 👌");
         } else {
           navigate("/")
           toast.success("Login Successfully 👌");

@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const alSiddiqueSchema = new mongoose.Schema({
+    // 2 sup 2 hsd
     // sup current rading 
     sup1_currentReading: {
         type: Number,

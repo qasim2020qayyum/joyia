@@ -29,9 +29,9 @@ const AddAliPetrolium = () => {
     const [hsd_sale_rate, setHsdSaleRate] = useState('');
     // OTHER
     // payments 
-    const [psoCard, setPsoCard] = useState('');
-    const [HBLCard, setHBLCard] = useState('');
-    const [bankDeposit, setBankDeposit] = useState('');
+    const [psoCard, setPsoCard] = useState(0);
+    const [HBLCard, setHBLCard] = useState(0);
+    const [bankDeposit, setBankDeposit] = useState(0);
     const [psoPayment, setPsoPayment] = useState('');
     const [advanceSalary, setAdvanceSalary] = useState('');
     // recieving 
@@ -68,34 +68,34 @@ const AddAliPetrolium = () => {
         let pumpData = await fetch("http://localhost:8000/joiya/pump/data/", {
             method: 'POST',
             body: JSON.stringify({
-                sup1_currentReading,
-                sup2_currentReading,
-                sup3_currentReading,
-                sup4_currentReading,
-                hsd1_currentReading,
-                hsd2_currentReading,
+                sup1_currentReading: Number(sup1_currentReading),
+                sup2_currentReading: Number(sup2_currentReading),
+                sup3_currentReading: Number(sup3_currentReading),
+                sup4_currentReading: Number(sup4_currentReading),
+                hsd1_currentReading: Number(hsd1_currentReading),
+                hsd2_currentReading: Number(hsd2_currentReading),
                 // rates 
-                sup_purchase_rate,
-                sup_sale_rate,
-                hsd_purchase_rate,
-                hsd_sale_rate,
+                sup_purchase_rate: Number(sup_purchase_rate),
+                sup_sale_rate: Number(sup_sale_rate),
+                hsd_purchase_rate: Number(hsd_purchase_rate),
+                hsd_sale_rate: Number(hsd_sale_rate),
 
                 // recieving 
-                creditWasoli,
-                lubricants,
-                tucShop,
-                cashFromOtherPumps,
+                creditWasoli: Number(creditWasoli),
+                lubricants: Number(lubricants),
+                tucShop: Number(tucShop),
+                cashFromOtherPumps: Number(cashFromOtherPumps),
 
                 // payments 
-                psoCard,
-                HBLCard, 
-                bankDeposit,
-                psoPayment,
-                advanceSalary,
+                psoCard: Number(psoCard),
+                HBLCard:Number(HBLCard), 
+                bankDeposit: Number(bankDeposit),
+                psoPayment: Number(psoPayment),
+                advanceSalary: Number(advanceSalary),
 
                 // expense
-                miscPayment,
-                miscOther,
+                miscPayment: Number(miscPayment),
+                miscOther: Number(miscOther),
             }),
             headers: {
                 'Content-Type': 'application/json'
@@ -260,7 +260,8 @@ const AddAliPetrolium = () => {
                     <div className="form-row">
                         <div className="form-group">
                             <label htmlFor="name">PSO Card</label>
-                            <input type="number" required onChange={(e) => setPsoCard(e.target.vaue)} />
+                            <input type="number" required onChange={(e) => setPsoCard(e.target.value)} />
+                            {/* <input type="number" required onChange={(e) => setPsoCard(Number(e.target.value))} /> */}
                         </div>
                         <div className="form-group">
                             <label htmlFor="name">HBL Card</label>

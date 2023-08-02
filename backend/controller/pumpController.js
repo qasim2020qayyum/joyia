@@ -19,7 +19,8 @@ exports.addPumpData = async (req, res) => {
       // payment 
       psoCard, HBLCard, bankDeposit, psoPayment, advanceSalary,
       // expense 
-      miscPayment, miscOther, lastReadingSup1, lastReadingSup2, lastReadingSup3, lastReadingSup4, preClosing, lastReadingHsd1, lastReadingHsd2
+      miscPayment, miscOther,
+      lastReadingSup1, lastReadingSup2, lastReadingSup3, lastReadingSup4, preClosing, lastReadingHsd1, lastReadingHsd2
     } = req.body;
 
 

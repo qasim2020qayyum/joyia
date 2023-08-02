@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require('body-parser');
 const connectDB = require("./db/conn");
 const cors = require("cors")
 const env = require("dotenv").config()
@@ -7,7 +8,8 @@ const port = process.env.PORT || 6000;
 
 const app = express();
 
-app.use(express.json())
+// app.use(express.json())
+app.use(bodyParser.json());
 app.use(cors());
 
 
@@ -26,6 +28,7 @@ app.use("/joiya/khalidAndSon", require("./router/khalidAndSonRouter"))
 app.use("/joiya/noorPetrolium", require("./router/noorPetroliumRouter"))
 app.use("/joiya/alSiddique", require("./router/alSiddiqueRouter"))
 app.use("/joiya/nadirFillingStations", require("./router/nadirFillingStationsRouter"))
+app.use("/joiya/siaaFillingStation", require("./router/siaaFillingStationRouter"))
 
 app.use("/joiya/petrolrate", require("./router/rateRouter"))
 app.use("/joiya/worker", require("./router/workerRouter"))

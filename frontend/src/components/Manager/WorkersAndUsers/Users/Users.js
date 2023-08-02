@@ -50,7 +50,7 @@ const Users = () => {
                     onChange={handleInputChange}
                 />
             </form>
-            <h1 className='display-0 fw-bold my-4 text-danger'>WORKERS</h1>
+            <h1 className='display-0 fw-bold my-4 text-danger'>USERS</h1>
             <hr />
             <table class="table table-hover w-75 mx-auto text-center">
                 <thead>

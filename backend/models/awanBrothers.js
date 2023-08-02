@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const awanBrothersSchema = new mongoose.Schema({
+    
     // sup current rading 
     sup1_currentReading: {
         type: Number,

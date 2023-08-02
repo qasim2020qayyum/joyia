@@ -4,67 +4,67 @@ import { Link } from 'react-router-dom'
 const AllPumpData = [
   {
     id: 1,
-    name: "Ali Petrolium",
+    name: "Ali Petrolium", //
     path: "/ali-petrolium"
   },
   {
     id: 2,
-    name: "Awan Brother",
+    name: "Awan Brother", //
     path: "/awan-brother"
   },
   {
     id: 3,
-    name: "Baba Fareed Filling Station",
+    name: "Baba Fareed Filling Station", //
     path: "/baba-fareed-filling-station"
   },
   {
     id: 4,
-    name: "Bhatti Petrolium",
+    name: "Bhatti Petrolium", //
     path: "/bhatti-petrolium"
   },
   {
     id: 5,
-    name: "GO 09",
+    name: "GO 09", //
     path: "/go-09"
   },
   {
     id: 6,
-    name: "GO 45",
+    name: "GO 45", //
     path: "/go-45"
   },
   {
     id: 7,
-    name: "ID Filling Station",
+    name: "ID Filling Station", //
     path: "/id-filling-station"
   },
   {
     id: 8,
-    name: "Jahangir Petrolium Service",
+    name: "Jahangir Petrolium Service", //
     path: "/jahangir-petrolium-service"
   },
   {
     id: 9,
-    name: "Khalid & Sons PSO",
+    name: "Khalid & Sons PSO", //
     path: "/khalid-&-sons-pso"
   },
   {
     id: 10,
-    name: "Nadir Filling Station",
+    name: "Nadir Filling Station", //
     path: "/nadir-filling-station"
   },
   {
     id: 11,
-    name: "Noor Petrolium",
+    name: "Noor Petrolium", //
     path: "/noor-petrolium"
   },
   {
     id: 12,
-    name: "AL Siddique Filling Station",
+    name: "AL Siddique Filling Station", //
     path: "/al-siddique-filling-station"
   },
   {
     id: 13,
-    name: "SIAA Filling Station",
+    name: "SIAA Filling Station", //
     path: "/siaa-filling-station"
   },
 ]

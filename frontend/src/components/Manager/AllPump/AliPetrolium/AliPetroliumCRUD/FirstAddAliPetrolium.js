@@ -77,40 +77,42 @@ const FirstAddAliPetrolium = () => {
         let pumpData = await fetch("http://localhost:8000/joiya/pump/data/", {
             method: 'POST',
             body: JSON.stringify({
-                lastReadingSup1,
-                lastReadingSup2,
-                lastReadingSup3,lastReadingSup4,
-                lastReadingHsd1,lastReadingHsd2,
-                preClosing,
+                lastReadingSup1: Number(lastReadingSup1),
+                lastReadingSup2: Number(lastReadingSup2),
+                lastReadingSup3: Number(lastReadingSup3),
+                lastReadingSup4: Number(lastReadingSup4),
+                lastReadingHsd1: Number(lastReadingHsd1),
+                lastReadingHsd2: Number(lastReadingHsd2),
+                preClosing: Number(preClosing),
 
-                sup1_currentReading,
-                sup2_currentReading,
-                sup3_currentReading,
-                sup4_currentReading,
-                hsd1_currentReading,
-                hsd2_currentReading,
+                sup1_currentReading: Number(sup1_currentReading),
+                sup2_currentReading: Number(sup2_currentReading),
+                sup3_currentReading: Number(sup3_currentReading),
+                sup4_currentReading: Number(sup4_currentReading),
+                hsd1_currentReading: Number(hsd1_currentReading),
+                hsd2_currentReading: Number(hsd2_currentReading),
                 // rates 
-                sup_purchase_rate,
-                sup_sale_rate,
-                hsd_purchase_rate,
-                hsd_sale_rate,
+                sup_purchase_rate: Number(sup_purchase_rate),
+                sup_sale_rate: Number(sup_sale_rate),
+                hsd_purchase_rate: Number(hsd_purchase_rate),
+                hsd_sale_rate: Number(hsd_sale_rate),
 
                 // recieving 
-                creditWasoli,
-                lubricants,
-                tucShop,
-                cashFromOtherPumps,
+                creditWasoli: Number(creditWasoli),
+                lubricants: Number(lubricants),
+                tucShop: Number(tucShop),
+                cashFromOtherPumps: Number(cashFromOtherPumps),
 
                 // payments 
-                psoCard,
-                HBLCard,
-                bankDeposit,
-                psoPayment,
-                advanceSalary,
+                psoCard: Number(psoCard),
+                HBLCard: Number(HBLCard),
+                bankDeposit: Number(bankDeposit),
+                psoPayment: Number(psoPayment),
+                advanceSalary: Number(advanceSalary),
 
                 // expense
-                miscPayment,
-                miscOther,
+                miscPayment: Number(miscPayment),
+                miscOther: Number(miscOther),
             }),
             headers: {
                 'Content-Type': 'application/json'
